@@ -2,6 +2,9 @@
 Changelog for package pmb2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 5.1.3 (2024-08-19)
 ------------------
 * Merge branch 'tpe/fix/slipping' into 'humble-devel'
