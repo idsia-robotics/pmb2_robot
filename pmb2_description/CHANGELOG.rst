@@ -2,6 +2,18 @@
 Changelog for package pmb2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'man/feat/docking' into 'humble-devel'
+  added docking link in urdf
+  See merge request robots/pmb2_robot!145
+* added docking link in urdf
+* Merge branch 'fix/add_slash_to_nodes' into 'humble-devel'
+  Add slash to node names on parameter files
+  See merge request robots/pmb2_robot!146
+* Add slash to node names on parameter files
+* Contributors: Jordan Palacios, Noel Jimenez, josegarcia, martinaannicelli
+
 5.2.0 (2024-08-29)
 ------------------
 
