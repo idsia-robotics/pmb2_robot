@@ -2,8 +2,8 @@
 Changelog for package pmb2_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+5.3.0 (2024-09-03)
+------------------
 * Merge branch 'fix/add_slash_to_nodes' into 'humble-devel'
   Add slash to node names on parameter files
   See merge request robots/pmb2_robot!146
