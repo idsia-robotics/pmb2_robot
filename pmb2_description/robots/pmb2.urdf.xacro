@@ -49,7 +49,7 @@
   <xacro:if value="${laser_model not in ['no-laser', 'sick-551', 'sick-561', 'sick-571', 'hokuyo']}">
     <xacro:wrong_laser_model/>
   </xacro:if>
-  <xacro:if value="${add_on_module not in ['no-add-on', 'rgbd-sensors']}">
+  <xacro:if value="${add_on_module not in ['no-add-on', 'rgbd-sensors', 'lidar-back']}">
     <xacro:wrong_add_on_module/>
   </xacro:if>
 
@@ -67,6 +67,11 @@
   <!-- Courier rgbd sensors -->
   <xacro:if value="${add_on_module == 'rgbd-sensors'}">
     <xacro:include filename="$(find pmb2_description)/urdf/cameras_add_on/cameras_add_on.urdf.xacro" />
+  </xacro:if>
+
+  <!-- YDLIDAR TG15 mount -->
+  <xacro:if value="${add_on_module == 'lidar-back'}">
+    <xacro:include filename="$(find pmb2_description)/urdf/ydlidar_add_on/ydlidar_add_on.urdf.xacro" />
   </xacro:if>
 
   <!-- Materials for visualization -->
@@ -87,6 +92,11 @@
   <!-- RGBD Sensors -->
   <xacro:if value="${add_on_module == 'rgbd-sensors'}">
     <xacro:cameras_add_on name="cameras_add_on" parent="base_link"/>
+  </xacro:if>
+
+  <!-- YDLIDAR TG15 Sensor -->
+  <xacro:if value="${add_on_module == 'lidar-back'}">
+    <xacro:ydlidar_add_on name="ydlidar" parent="base_link"/>
   </xacro:if>
 
 </robot>

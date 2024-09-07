@@ -114,10 +114,10 @@
 
     <!-- Antennas -->
     <xacro:antenna name="${name}_antenna_left" parent="${name}_link">
-      <origin xyz="-0.201 0.1062 0.195" rpy="0 0 0"/>
+      <origin xyz="-0.186 0.135 0.195" rpy="0 0 0"/>
     </xacro:antenna>
     <xacro:antenna name="${name}_antenna_right" parent="${name}_link">
-      <origin xyz="-0.201 -0.1062 0.195" rpy="0 0 0"/>
+      <origin xyz="-0.186 -0.135 0.195" rpy="0 0 0"/>
     </xacro:antenna>
 
     <!-- Wheels -->
