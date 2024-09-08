@@ -29,7 +29,7 @@
   <xacro:arg name="has_microphone" default="false"/>
 
   <!-- false, true-->
-  <xacro:arg name="add_on_module" default="lidar-back"/>
+  <xacro:arg name="add_on_module" default="no-add-on"/>
 
   <!-- Execution env config -->
   <xacro:arg name="use_sim_time" default="false"/>
