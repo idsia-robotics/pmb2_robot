@@ -22,9 +22,9 @@
 
     <link name="${name}_link" type="laser">
       <inertial>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+        <origin xyz="-0.000027 0 0.016948" rpy="0 0 0"/>
         <mass value="0.175"/>
-        <inertia ixx="0.000074433" ixy="-1.585e-14" ixz="-0.000000073" iyy="0.000074641" iyz="1.714e-14" izz="0.000113319"/>      
+        <inertia ixx="0.000074433" ixy="-1.585e-14" ixz="-0.000000073" iyy="0.000074641" iyz="1.714e-14" izz="0.000113319"/>
       </inertial>
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>

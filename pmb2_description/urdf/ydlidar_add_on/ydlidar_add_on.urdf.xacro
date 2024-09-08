@@ -24,19 +24,19 @@
 
     <link name="${name}_add_on_link">
       <inertial>
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.057577 0.001831 -0.007628" rpy="0.0 0.0 0.0"/>
         <mass value="0.152"/>
-        <inertia ixx="0.00690488876" ixy="0.000073254" ixz="0.0076684" iyy="0.015874966" iyz="-0.000049362" izz="0.010290654"/>
+        <inertia ixx="0.000669815" ixy="0.000003921" ixz="0.000005377" iyy="0.000221633" iyz="0.000007046" izz="0.000871373"/>
       </inertial>
       <visual>
-        <origin xyz="0.30631686 0.0 -0.210" rpy="0 0 0"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://pmb2_description/meshes/ydlidar_add_on/ydlidar_add_on.stl" scale="1 1 1"/>
         </geometry>
         <material name="Grey" />
       </visual>
       <collision>
-        <origin xyz="0.30631686 0.0 -0.210" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://pmb2_description/meshes/ydlidar_add_on/ydlidar_add_on.stl" scale="1 1 1"/>
         </geometry>
