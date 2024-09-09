@@ -20,7 +20,7 @@
 
   <xacro:macro name="ydlidar_tg15_laser" params="name parent xyz rpy ros_topic update_rate min_angle max_angle">
 
-    <link name="${name}_link" type="laser">
+    <link name="${name}" type="laser">
       <inertial>
         <origin xyz="-0.000027 0 0.016948" rpy="0 0 0"/>
         <mass value="0.175"/>
@@ -39,7 +39,7 @@
       <axis xyz="0 1 0"/>
       <origin xyz="${xyz}" rpy="${rpy}"/>
       <parent link="${parent}"/>
-      <child link="${name}_link"/>
+      <child link="${name}"/>
     </joint>
 
     <!-- gazebo extensions -->

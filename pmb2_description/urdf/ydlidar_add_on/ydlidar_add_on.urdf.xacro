@@ -51,7 +51,7 @@
     </joint>
 
     <!-- Add LIDAR Sensor -->
-    <xacro:ydlidar_tg15_laser name="${name}_link" parent="${name}_add_on_link" xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${180 * deg_to_rad}" ros_topic="scan_raw_back" update_rate="10" min_angle="${-180 * deg_to_rad}" max_angle="${180 * deg_to_rad}">
+    <xacro:ydlidar_tg15_laser name="${name}" parent="${name}_add_on_link" xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${180 * deg_to_rad}" ros_topic="scan_raw_back" update_rate="10" min_angle="${-180 * deg_to_rad}" max_angle="${180 * deg_to_rad}">
     </xacro:ydlidar_tg15_laser>
 
    </xacro:macro>

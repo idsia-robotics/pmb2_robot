@@ -26,7 +26,7 @@
           <scan>
             <horizontal>
               <!-- UPDATE FOR ACTUAL YDLIDAR TG15 -->
-              <samples>${818}</samples>
+              <samples>${2000}</samples>              <!-- This should give angular resolution of around 0.18 degrees -->
               <resolution>1</resolution>              <!-- not the sensor resolution; just 1 -->
               <min_angle>${min_angle}</min_angle>
               <max_angle>${max_angle}</max_angle>
@@ -35,7 +35,7 @@
           <range>
             <min>0.05</min>
             <max>15.0</max>
-            <resolution>0.001</resolution>
+            <resolution>0.001</resolution>            <!-- rays linear resolution in m -->
           </range>
           <noise>
             <type>gaussian</type>
@@ -48,7 +48,7 @@
             <remapping>~/out:=${ros_topic}</remapping>
           </ros>
           <output_type>sensor_msgs/LaserScan</output_type>
-          <frame_name>${name}_link</frame_name>
+          <frame_name>${name}</frame_name>
         </plugin>
       </sensor>
       <material>Gazebo/DarkGrey</material>
