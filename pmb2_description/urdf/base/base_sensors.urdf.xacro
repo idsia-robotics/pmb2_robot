@@ -85,7 +85,7 @@
 
     <!-- YDLIDAR TG15 Back -->
     <xacro:if value="${add_on_module == 'lidar-back'}">
-      <xacro:ydlidar_add_on name="base_laser_back" parent="${name}_link"/>
+      <xacro:ydlidar_add_on name="laser_back" parent="${name}_link"/>
     </xacro:if>
 
     <!-- Sonars -->
