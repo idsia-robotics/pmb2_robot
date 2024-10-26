@@ -30,6 +30,10 @@ if(BUILD_TESTING)
       )
       endforeach()
   endforeach()
+  ament_add_pytest_test(test_xacro test/test_xacro.py)
+
+  add_launch_test(test/test_description.launch.py)
+
 endif()
 
 # Install Python modules
