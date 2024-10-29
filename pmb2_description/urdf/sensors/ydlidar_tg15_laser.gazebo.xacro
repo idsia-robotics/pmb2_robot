@@ -48,7 +48,7 @@
             <remapping>~/out:=${ros_topic}</remapping>
           </ros>
           <output_type>sensor_msgs/LaserScan</output_type>
-          <frame_name>${name}</frame_name>
+          <frame_name>${name}_link</frame_name>
         </plugin>
       </sensor>
       <material>Gazebo/DarkGrey</material>

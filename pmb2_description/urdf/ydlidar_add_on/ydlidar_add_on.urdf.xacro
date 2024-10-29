@@ -22,7 +22,7 @@
   <!-- MACRO DEFINITION-->
   <xacro:macro name="ydlidar_add_on" params="name parent">
 
-    <link name="${name}_base">
+    <link name="${name}_mount_link">
       <inertial>
         <origin xyz="0.057577 0.001831 -0.007628" rpy="0.0 0.0 0.0"/>
         <mass value="0.152"/>
@@ -43,15 +43,16 @@
         <material name="Grey" />
       </collision>
     </link>
-    <joint name="${name}_add_on_joint" type="fixed">
+    <joint name="${name}_mount_joint" type="fixed">
       <parent link="${parent}"/>
-      <child link="${name}_base"/>
+      <child link="${name}_mount_link"/>
       <origin xyz="-0.30631686 0.0 0.210" rpy="0 0 0" />
       <axis xyz="0 0 1" />
     </joint>
 
     <!-- Add LIDAR Sensor -->
-    <xacro:ydlidar_tg15_laser name="${name}_frame" parent="${name}_base" xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${180 * deg_to_rad}" ros_topic="scan_raw_back" update_rate="10" min_angle="${-180 * deg_to_rad}" max_angle="${180 * deg_to_rad}">
+    <xacro:ydlidar_tg15_laser name="${name}" parent="${name}_mount_link" ros_topic="scan_raw_back" update_rate="10" min_angle="${-180 * deg_to_rad}" max_angle="${180 * deg_to_rad}">
+      <origin xyz="0.0 0.0 0.02" rpy="0.0 0.0 ${180 * deg_to_rad}" />
     </xacro:ydlidar_tg15_laser>
 
    </xacro:macro>
